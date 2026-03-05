@@ -1,36 +1,28 @@
 // js/slider.js
 
 document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll('.review-slide');
   let currentSlide = 0;
-  const track = document.getElementById('review-track');
-  const dots = document.getElementById('review-dots').querySelectorAll('button');
-  const totalSlides = dots.length;
+  const totalSlides = slides.length;
 
-  // Make goToSlide available globally so the HTML buttons can use it
-  window.goToSlide = function(index) {
-    currentSlide = index;
-    updateSlider();
-  };
+  // Safety check
+  if (totalSlides === 0) return;
 
   function updateSlider() {
-    // Slide the track left or right based on the current index
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    
-    // Update dot colors
-    dots.forEach((dot, index) => {
-      if (index === currentSlide) {
-        dot.classList.add('bg-primary');
-        dot.classList.remove('bg-gray-300');
-      } else {
-        dot.classList.add('bg-gray-300');
-        dot.classList.remove('bg-primary');
-      }
-    });
+    // 1. Hide all slides
+    for (let i = 0; i < totalSlides; i++) {
+      slides[i].classList.add('hidden');
+      slides[i].classList.remove('flex');
+    }
+
+    // 2. Show ONLY the current slide
+    slides[currentSlide].classList.remove('hidden');
+    slides[currentSlide].classList.add('flex');
   }
 
-  // Auto-slide every 5 seconds
+  // 3. Autoplay: automatically switch slides every 4 seconds
   setInterval(() => {
     currentSlide = (currentSlide + 1) % totalSlides;
     updateSlider();
-  }, 5000);
+  }, 4000);
 });
