@@ -19,3 +19,7 @@
     overflow-x: hidden;
   }
 }
+
+/* Add this to hide the scrollbar on the yellow pill menu */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

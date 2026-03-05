@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Get Pizza</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-white py-4 md:py-6 w-full z-50 relative">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex justify-between items-center">
+          
+          <a href="#" class="flex items-center">
+            <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-10 md:h-12" />
+          </a>
+
+          <nav id="nav-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-6 md:static md:block md:w-auto md:shadow-none md:py-0 md:px-0 z-40 border-t border-gray-100 md:border-none">
+            <ul class="flex flex-col md:flex-row gap-6 md:gap-8 text-sm font-medium uppercase tracking-wider text-gray-900">
+              <li><a href="index.html" class="hover:text-primary transition-colors block">Home</a></li>
+              <li><a href="about.html" class="hover:text-primary transition-colors block">About</a></li>
+              <li><a href="menu.html" class="hover:text-primary transition-colors block">Menu</a></li>
+              <li><a href="contacts.html" class="hover:text-primary transition-colors block">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-primary focus:outline-none cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- announcement -->
+     <div class="bg-gray-50 py-2 border-b border-gray-100 w-full z-40">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex items-center justify-center gap-2 text-primary text-xs md:text-sm font-medium">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3 11 18-5v12L3 14v-3z"></path>
+            <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+          </svg>
+          <p>This website provides information about our store. Online transactions are coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- maps -->
+    <section class="bg-white py-12 md:py-16">
+      <div class="container mx-auto px-6 md:px-20 flex justify-center">
+        
+        <div class="w-full max-w-5xl border-b-4 md:border-b-[6px] border-secondary">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372058564898!2d121.34546637623282!3d14.055193590194659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1772754246085!5m2!1sen!2sph" 
+            class="w-full h-87.5 md:h-112.5" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="bg-secondary py-16 md:py-24">
+      <div class="container mx-auto px-6 md:px-20">
+        
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black uppercase text-center text-gray-900 mb-8 md:mb-12 tracking-wide">
+          Get In Touch
+        </h2>
+
+        <form class="max-w-3xl mx-auto flex flex-col gap-3 md:gap-4">
+          
+          <div class="flex flex-row gap-3 md:gap-4">
+            <input 
+              type="text" 
+              placeholder="First Name" 
+              class="w-1/2 bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors"
+              required
+            />
+            <input 
+              type="text" 
+              placeholder="Last Name" 
+              class="w-1/2 bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors"
+              required
+            />
+          </div>
+
+          <input 
+            type="email" 
+            placeholder="Email Address" 
+            class="w-full bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors"
+            required
+          />
+
+          <input 
+            type="text" 
+            placeholder="Subject" 
+            class="w-full bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors"
+            required
+          />
+
+          <textarea 
+            placeholder="Your Message" 
+            rows="6"
+            class="w-full bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors resize-y"
+            required
+          ></textarea>
+
+          <div class="flex justify-center mt-4 md:mt-6">
+            <button 
+              type="submit" 
+              class="bg-primary text-white text-sm md:text-base font-bold uppercase tracking-wide px-10 py-3.5 md:px-12 md:py-4 rounded-lg hover:opacity-90 transition-opacity cursor-pointer"
+            >
+              Submit Form
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <!-- footer -->
+     <footer class="bg-white py-16">
+      <div class="container mx-auto px-6 md:px-20 flex flex-col items-center text-center">
+        
+        <a href="#" class="mb-12">
+          <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-20 md:h-24 object-contain" />
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 w-full max-w-4xl mb-12">
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Address</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              570 8th Ave, New York, NY<br>
+              10018 United States
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Book a Table</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Dogfood Och Sliders Foodtruck.<br>
+              Under Om Oss Kan Ni Läsa
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Opening Hours</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Monday – Friday<br>
+              10.00 AM – 11.00 PM
+            </p>
+          </div>
+        </div>
+
+        <a href="tel:0123456987" class="text-primary text-sm md:text-base font-medium hover:underline transition-colors">
+          0123456987
+        </a>
+
+      </div>
+    </footer>
+
+    <!-- script -->
+     <script src="/js/toggle-menu.js"></script>
+     <script src="/js/menu-tabs.js"></script>
+
+</body>
+</html>
