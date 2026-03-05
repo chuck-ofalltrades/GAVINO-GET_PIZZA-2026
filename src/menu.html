@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU | Get Pizza</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-white py-4 md:py-6 w-full z-50 relative">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex justify-between items-center">
+          
+          <a href="#" class="flex items-center">
+            <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-10 md:h-12" />
+          </a>
+
+          <nav id="nav-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-6 md:static md:block md:w-auto md:shadow-none md:py-0 md:px-0 z-40 border-t border-gray-100 md:border-none">
+            <ul class="flex flex-col md:flex-row gap-6 md:gap-8 text-sm font-medium uppercase tracking-wider text-gray-900">
+              <li><a href="index.html" class="hover:text-primary transition-colors block">Home</a></li>
+              <li><a href="about.html" class="hover:text-primary transition-colors block">About</a></li>
+              <li><a href="menu.html" class="hover:text-primary transition-colors block">Menu</a></li>
+              <li><a href="contacts.html" class="hover:text-primary transition-colors block">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-primary focus:outline-none cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- announcement -->
+     <div class="bg-gray-50 py-2 border-b border-gray-100 w-full z-40">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex items-center justify-center gap-2 text-primary text-xs md:text-sm font-medium">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m3 11 18-5v12L3 14v-3z"></path>
+            <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
+          </svg>
+          <p>This website provides information about our store. Online transactions are coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- menu banner -->
+     <section class="relative bg-cover bg-center bg-no-repeat py-32 md:py-48" style="background-image: url('/IMG/menubanner.jpg');">
+      
+      <div class="absolute inset-0 bg-black/40"></div> 
+      
+      <div class="container mx-auto px-6 relative z-10 flex items-center justify-center">
+        
+        <h1 class="text-white font-black uppercase text-center text-3xl sm:text-4xl md:text-5xl lg:text-[54px] leading-[1.2] md:leading-[1.1] tracking-wide">
+          
+          <span class="block md:hidden">
+            Always Fresh <br>
+            & Ready to be <br>
+            Served.
+          </span>
+          
+          <span class="hidden md:block">
+            Always Fresh & Ready <br>
+            to be Served.
+          </span>
+
+        </h1>
+        
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section id="full-menu" class="bg-tertiary py-12 md:py-24 text-white">
+      <div class="container mx-auto px-4 sm:px-6 md:px-20">
+        
+        <div class="flex justify-center mb-8 md:mb-16">
+          <div class="bg-secondary rounded-full flex items-center justify-center px-2 py-2.5 md:px-10 md:py-4 w-full max-w-3xl">
+            
+            <button onclick="switchMenuTab('pizza')" id="menu-tab-pizza" class="menu-page-tab text-primary font-black uppercase text-[9px] sm:text-xs md:text-sm tracking-wide transition-colors whitespace-nowrap">
+              Pizza
+            </button>
+            
+            <div class="w-px h-3 md:h-4 bg-tertiary/30 mx-1.5 sm:mx-3 md:mx-6"></div>
+            
+            <button onclick="switchMenuTab('burger')" id="menu-tab-burger" class="menu-page-tab text-tertiary hover:text-primary font-bold uppercase text-[9px] sm:text-xs md:text-sm tracking-wide transition-colors whitespace-nowrap">
+              Burger
+            </button>
+            
+            <div class="w-px h-3 md:h-4 bg-tertiary/30 mx-1.5 sm:mx-3 md:mx-6"></div>
+            
+            <button onclick="switchMenuTab('chicken')" id="menu-tab-chicken" class="menu-page-tab text-tertiary hover:text-primary font-bold uppercase text-[9px] sm:text-xs md:text-sm tracking-wide transition-colors whitespace-nowrap">
+              Chicken
+            </button>
+            
+            <div class="w-px h-3 md:h-4 bg-tertiary/30 mx-1.5 sm:mx-3 md:mx-6"></div>
+            
+            <button onclick="switchMenuTab('drinks')" id="menu-tab-drinks" class="menu-page-tab text-tertiary hover:text-primary font-bold uppercase text-[9px] sm:text-xs md:text-sm tracking-wide transition-colors whitespace-nowrap">
+              Drinks
+            </button>
+            
+            <div class="w-px h-3 md:h-4 bg-tertiary/30 mx-1.5 sm:mx-3 md:mx-6"></div>
+            
+            <button onclick="switchMenuTab('cake')" id="menu-tab-cake" class="menu-page-tab text-tertiary hover:text-primary font-bold uppercase text-[9px] sm:text-xs md:text-sm tracking-wide transition-colors whitespace-nowrap">
+              Cake
+            </button>
+
+          </div>
+        </div>
+
+        <div id="page-content-pizza" class="menu-page-content grid grid-cols-3 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="BBQ Pizza" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">BBQ Pizza</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$25.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="page-content-burger" class="menu-page-content hidden grid-cols-3 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$15.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="page-content-chicken" class="menu-page-content hidden grid-cols-3 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$45.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="page-content-drinks" class="menu-page-content hidden grid-cols-3 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$10.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="page-content-cake" class="menu-page-content hidden grid-cols-3 md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-24 md:size-32 rounded-full object-cover">
+            </div>
+            <h3 class="text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2">$23.00</p>
+            <div class="flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- connect -->
+     <section id="connect" class="bg-primary pt-10 md:pt-0 overflow-hidden">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          
+          <div class="hidden md:flex w-full md:w-1/2 justify-end md:self-end">
+            <img 
+              src="/IMG/chef.png" 
+              alt="Chef pointing" 
+              class="w-full max-w-70 md:max-w-87.5 lg:max-w-105 object-contain"
+            />
+          </div>
+
+          <div class="w-full md:w-1/2 text-center text-white py-12 md:py-24 flex flex-col items-center">
+            <h2 class="text-2xl md:text-3xl lg:text-[32px] font-black uppercase mb-2 tracking-wide">
+              Let's Connect
+            </h2>
+            <p class="text-sm md:text-base font-medium mb-8">
+              and get a 10% off bill offers and invites
+            </p>
+
+            <form class="w-full max-w-md bg-white p-1.5 flex flex-col sm:flex-row items-center rounded-md mx-auto gap-2 sm:gap-0">
+              <input 
+                type="email" 
+                placeholder="YOUR EMAIL ADDRESS" 
+                class="flex-1 w-full bg-transparent text-gray-800 text-xs font-semibold px-4 py-3 outline-none placeholder-gray-400 text-center sm:text-left"
+                required
+              />
+              <button 
+                type="submit" 
+                class="bg-secondary text-gray-900 text-xs font-bold uppercase px-8 py-3 rounded hover:bg-yellow-500 transition-colors w-full sm:w-auto whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+     <footer class="bg-white py-16">
+      <div class="container mx-auto px-6 md:px-20 flex flex-col items-center text-center">
+        
+        <a href="#" class="mb-12">
+          <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-20 md:h-24 object-contain" />
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 w-full max-w-4xl mb-12">
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Address</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              570 8th Ave, New York, NY<br>
+              10018 United States
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Book a Table</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Dogfood Och Sliders Foodtruck.<br>
+              Under Om Oss Kan Ni Läsa
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Opening Hours</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Monday – Friday<br>
+              10.00 AM – 11.00 PM
+            </p>
+          </div>
+        </div>
+
+        <a href="tel:0123456987" class="text-primary text-sm md:text-base font-medium hover:underline transition-colors">
+          0123456987
+        </a>
+
+      </div>
+    </footer>
+
+    <!-- script -->
+     <script src="/js/toggle-menu.js"></script>
+     <script src="/js/menu-tabs.js"></script>
+     <script src="/js/accordion.js"></script>
+     <script src="/js/slider.js"></script>
+
+</body>
+</html>
