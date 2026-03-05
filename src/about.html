@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Pizza - Gavino</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="bg-white py-4 md:py-6 w-full z-50 relative">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex justify-between items-center">
+          
+          <a href="#" class="flex items-center">
+            <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-10 md:h-12" />
+          </a>
+
+          <nav id="nav-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-6 md:static md:block md:w-auto md:shadow-none md:py-0 md:px-0 z-40 border-t border-gray-100 md:border-none">
+            <ul class="flex flex-col md:flex-row gap-6 md:gap-8 text-sm font-medium uppercase tracking-wider text-gray-900">
+              <li><a href="index.html" class="hover:text-primary transition-colors block">Home</a></li>
+              <li><a href="about.html" class="hover:text-primary transition-colors block">About</a></li>
+              <li><a href="#menu" class="hover:text-primary transition-colors block">Menu</a></li>
+              <li><a href="#contacts" class="hover:text-primary transition-colors block">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-primary focus:outline-none cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- about banner -->
+    <section class="py-12 md:py-24 bg-white">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+          
+          <div class="w-full md:w-1/2">
+            <div class="relative w-full aspect-video bg-black overflow-hidden shadow-md">
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/n-VRntrbypI?si=SEZcFUKvSl8lcHJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 text-left">
+            <h2 class="text-4xl sm:text-5xl lg:text-[54px] font-black uppercase text-primary leading-[1.1] mb-4 md:mb-6 tracking-tight">
+              Serving Get Pizzas <br class="hidden xl:block" />
+              By The Since 1985
+            </h2>
+            <p class="text-gray-700 leading-relaxed text-[13px] sm:text-sm md:text-base font-normal">
+              We would like to take this opportunity to welcome you at our Pizza
+              House. We are offering a warm, friendly atmosphere to share a meal
+              with family and friends at any time of the day or evening.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- our story -->
+     <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 md:px-20">
+        
+        <h2 class="text-3xl md:text-4xl lg:text-[40px] font-black uppercase text-center text-gray-900 mb-10 md:mb-16 tracking-tight">
+          Our Story
+        </h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
+          
+          <div class="w-full md:w-1/2 flex flex-col gap-3 md:gap-4">
+            
+            <div class="accordion-item w-full shadow-sm">
+              <button class="accordion-btn w-full flex justify-between items-center bg-primary text-white font-bold px-6 py-4 cursor-pointer outline-none">
+                <span>1985</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-5 chevron transition-transform duration-300 rotate-180">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </button>
+              <div class="accordion-content bg-gray-50 px-6 py-5 text-gray-700 text-[13px] md:text-sm leading-relaxed border-t border-gray-200">
+                <p>1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam. ex ea commodo consequatuis irure. Dolor in reprehenderit in volue.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item w-full shadow-sm">
+              <button class="accordion-btn w-full flex justify-between items-center bg-primary text-white font-bold px-6 py-4 cursor-pointer outline-none">
+                <span>1990</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-5 chevron transition-transform duration-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden bg-gray-50 px-6 py-5 text-gray-700 text-[13px] md:text-sm leading-relaxed border-t border-gray-200">
+                <p>1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item w-full shadow-sm">
+              <button class="accordion-btn w-full flex justify-between items-center bg-primary text-white font-bold px-6 py-4 cursor-pointer outline-none">
+                <span>2000</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-5 chevron transition-transform duration-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden bg-gray-50 px-6 py-5 text-gray-700 text-[13px] md:text-sm leading-relaxed border-t border-gray-200">
+                <p>2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item w-full shadow-sm">
+              <button class="accordion-btn w-full flex justify-between items-center bg-primary text-white font-bold px-6 py-4 cursor-pointer outline-none">
+                <span>2010</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-5 chevron transition-transform duration-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden bg-gray-50 px-6 py-5 text-gray-700 text-[13px] md:text-sm leading-relaxed border-t border-gray-200">
+                <p>2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item w-full shadow-sm">
+              <button class="accordion-btn w-full flex justify-between items-center bg-primary text-white font-bold px-6 py-4 cursor-pointer outline-none">
+                <span>2021</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-5 chevron transition-transform duration-300">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </button>
+              <div class="accordion-content hidden bg-gray-50 px-6 py-5 text-gray-700 text-[13px] md:text-sm leading-relaxed border-t border-gray-200">
+                <p>2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="hidden md:block w-full md:w-1/2">
+            <img 
+              src="/IMG/meeting.png" 
+              alt="People sharing food" 
+              class="w-full h-auto object-cover rounded-2xl md:rounded-3xl shadow-md"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu" class="bg-tertiary py-16 md:py-24 text-white">
+      <div class="container mx-auto px-4 sm:px-6 md:px-20">
+        
+        <h2 class="text-2xl md:text-3xl lg:text-[32px] font-black uppercase text-center mb-10 md:mb-16 tracking-wide leading-snug">
+          We offer people best way to eat best food
+        </h2>
+
+        <div class="flex flex-wrap justify-center items-center gap-3 md:gap-8 mb-12 md:mb-16" id="menu-tabs">
+          <div onclick="switchTab('pizza')" id="tab-pizza" class="tab-btn size-[60px] md:size-[80px] border-2 border-secondary p-1 rounded-full flex items-center justify-center cursor-pointer transition-all">
+            <div class="bg-white rounded-full w-full h-full flex items-center justify-center">
+              <img src="/IMG/pizzaa.png" alt="Pizza" class="tab-icon size-7 md:size-10 object-contain" />
+            </div>
+          </div>
+          <div onclick="switchTab('burger')" id="tab-burger" class="tab-btn size-[54px] md:size-[72px] border-2 border-transparent hover:border-secondary p-0 rounded-full flex items-center justify-center cursor-pointer transition-all">
+            <div class="bg-white rounded-full w-full h-full flex items-center justify-center">
+              <img src="/IMG/burger.png" alt="Burger" class="tab-icon size-7 md:size-10 object-contain opacity-80" />
+            </div>
+          </div>
+          <div onclick="switchTab('chicken')" id="tab-chicken" class="tab-btn size-[54px] md:size-[72px] border-2 border-transparent hover:border-secondary p-0 rounded-full flex items-center justify-center cursor-pointer transition-all">
+            <div class="bg-white rounded-full w-full h-full flex items-center justify-center">
+              <img src="/IMG/chicken.png" alt="Chicken" class="tab-icon size-7 md:size-10 object-contain opacity-80" />
+            </div>
+          </div>
+          <div onclick="switchTab('drinks')" id="tab-drinks" class="tab-btn size-[54px] md:size-[72px] border-2 border-transparent hover:border-secondary p-0 rounded-full flex items-center justify-center cursor-pointer transition-all">
+            <div class="bg-white rounded-full w-full h-full flex items-center justify-center">
+              <img src="/IMG/drinks.png" alt="Drink" class="tab-icon size-7 md:size-10 object-contain opacity-80" />
+            </div>
+          </div>
+          <div onclick="switchTab('cake')" id="tab-cake" class="tab-btn size-[54px] md:size-[72px] border-2 border-transparent hover:border-secondary p-0 rounded-full flex items-center justify-center cursor-pointer transition-all">
+            <div class="bg-white rounded-full w-full h-full flex items-center justify-center">
+              <img src="/IMG/cake.png" alt="Cake" class="tab-icon size-7 md:size-10 object-contain opacity-80" />
+            </div>
+          </div>
+        </div>
+
+        <div id="content-pizza" class="menu-content grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/prosciutto.png" alt="Prosciutto Pizza" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Prosciutto Pizza</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$25.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/bbq pizza.png" alt="Barbecue Pizza" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Barbecue Pizza</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$25.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="content-burger" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$15.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Cheese Burger</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$18.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="content-chicken" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$45.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Fillet With Bread</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$58.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="content-drinks" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$10.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Orange Drinks</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$12.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+        <div id="content-cake" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$23.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
+            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
+              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
+            </div>
+            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Muffin</h3>
+            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$20.00</p>
+            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <a href="#" class="border border-primary/100 rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- review -->
+     <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 md:px-20 flex flex-col items-center text-center">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-black uppercase text-gray-900 mb-8 md:mb-12 tracking-tight">
+          Clients Review
+        </h2>
+
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+          
+          <img 
+            src="/IMG/feedback.png" 
+            alt="Patrick Greenish" 
+            class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover mb-6"
+          />
+          
+          <p class="text-gray-700 text-[13px] sm:text-sm md:text-base leading-relaxed mb-6">
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis mollitia sit voluptatibus laboriosam, vero corporis minima! Facere fuga, optio officiis possimus cum repudiandae eaque? Debitis dicta cumque placeat facere!"
+          </p>
+          
+          <p class="text-gray-900 font-medium text-sm md:text-base">
+            Patrick Greenish
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- connect -->
+     <section id="connect" class="bg-primary pt-10 md:pt-0 overflow-hidden">
+      <div class="container mx-auto px-6 md:px-20">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          
+          <div class="hidden md:flex w-full md:w-1/2 justify-end md:self-end">
+            <img 
+              src="/IMG/chef.png" 
+              alt="Chef pointing" 
+              class="w-full max-w-[280px] md:max-w-[350px] lg:max-w-[420px] object-contain"
+            />
+          </div>
+
+          <div class="w-full md:w-1/2 text-center text-white py-12 md:py-24 flex flex-col items-center">
+            <h2 class="text-2xl md:text-3xl lg:text-[32px] font-black uppercase mb-2 tracking-wide">
+              Let's Connect
+            </h2>
+            <p class="text-sm md:text-base font-medium mb-8">
+              and get a 10% off bill offers and invites
+            </p>
+
+            <form class="w-full max-w-md bg-white p-1.5 flex flex-col sm:flex-row items-center rounded-md mx-auto gap-2 sm:gap-0">
+              <input 
+                type="email" 
+                placeholder="YOUR EMAIL ADDRESS" 
+                class="flex-1 w-full bg-transparent text-gray-800 text-xs font-semibold px-4 py-3 outline-none placeholder-gray-400 text-center sm:text-left"
+                required
+              />
+              <button 
+                type="submit" 
+                class="bg-secondary text-gray-900 text-xs font-bold uppercase px-8 py-3 rounded hover:bg-yellow-500 transition-colors w-full sm:w-auto whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+     <footer class="bg-white py-16">
+      <div class="container mx-auto px-6 md:px-20 flex flex-col items-center text-center">
+        
+        <a href="#" class="mb-12">
+          <img src="/IMG/LOGO.png" alt="Get Pizza Logo" class="h-20 md:h-24 object-contain" />
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 w-full max-w-4xl mb-12">
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Address</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              570 8th Ave, New York, NY<br>
+              10018 United States
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Book a Table</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Dogfood Och Sliders Foodtruck.<br>
+              Under Om Oss Kan Ni Läsa
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black text-gray-900 uppercase mb-3 text-base md:text-lg tracking-wide">Opening Hours</h4>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium">
+              Monday – Friday<br>
+              10.00 AM – 11.00 PM
+            </p>
+          </div>
+        </div>
+
+        <a href="tel:0123456987" class="text-primary text-sm md:text-base font-medium hover:underline transition-colors">
+          0123456987
+        </a>
+
+      </div>
+    </footer>
+
+    <!-- script -->
+     <script src="/js/toggle-menu.js"></script>
+     <script src="/js/menu-tabs.js"></script>
+     <script src="/js/accordion.js"></script>
+
+</body>
+</html>

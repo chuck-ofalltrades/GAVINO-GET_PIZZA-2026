@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --color-primary: #b23920;
+  --color-secondary: #f7b754;
+  --color-tertiary: #223c5f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    color: #1f2937; 
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+}
