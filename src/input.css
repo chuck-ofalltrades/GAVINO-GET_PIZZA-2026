@@ -20,6 +20,44 @@
   }
 }
 
-/* Add this to hide the scrollbar on the yellow pill menu */
+/* =========================================
+   CUSTOM COMPONENTS (Using @apply)
+   ========================================= */
+@layer components {
+  /* Navigation Links */
+  .nav-link {
+    @apply hover:text-primary transition-colors block;
+  }
+
+  /* Section Headings */
+  .section-heading {
+    @apply text-2xl md:text-3xl lg:text-[40px] font-black uppercase text-gray-900 tracking-tight;
+  }
+
+  /* --- MENU CARD COMPONENTS --- */
+  .menu-card {
+    @apply border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full;
+  }
+  .menu-card-img-wrap {
+    @apply rounded-full border border-white/20 p-2 mb-4 md:mb-6;
+  }
+  .menu-card-img {
+    @apply size-20 sm:size-28 md:size-40 rounded-full object-cover;
+  }
+  .menu-card-title {
+    @apply text-[13px] sm:text-base md:text-xl font-black uppercase mb-1;
+  }
+  .menu-card-price {
+    @apply font-bold text-[11px] sm:text-sm md:text-base mb-2;
+  }
+  .menu-card-rating {
+    @apply flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8;
+  }
+  .menu-card-btn {
+    @apply border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors;
+  }
+}
+
+/* Hide scrollbar utility */
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

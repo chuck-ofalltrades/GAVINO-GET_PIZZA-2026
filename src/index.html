@@ -15,7 +15,6 @@
 </head>
 <body>
 
-    <!-- header -->
     <header class="bg-white py-4 md:py-6 w-full z-50 relative">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex justify-between items-center">
@@ -26,10 +25,10 @@
 
           <nav id="nav-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg py-6 px-6 md:static md:block md:w-auto md:shadow-none md:py-0 md:px-0 z-40 border-t border-gray-100 md:border-none">
             <ul class="flex flex-col md:flex-row gap-6 md:gap-8 text-sm font-medium uppercase tracking-wider text-gray-900">
-              <li><a href="index.html" class="hover:text-primary transition-colors block">Home</a></li>
-              <li><a href="about.html" class="hover:text-primary transition-colors block">About</a></li>
-              <li><a href="menu.html" class="hover:text-primary transition-colors block">Menu</a></li>
-              <li><a href="contacts.html" class="hover:text-primary transition-colors block">Contacts</a></li>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="menu.html" class="nav-link">Menu</a></li>
+              <li><a href="contacts.html" class="nav-link">Contacts</a></li>
             </ul>
           </nav>
 
@@ -45,21 +44,10 @@
       </div>
     </header>
 
-    <!-- announcement -->
-     <div class="bg-gray-50 py-2 border-b border-gray-100 w-full z-40">
+    <div class="bg-gray-50 py-2 border-b border-gray-100 w-full z-40">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex items-center justify-center gap-2 text-primary text-xs md:text-sm font-medium">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m3 11 18-5v12L3 14v-3z"></path>
             <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
           </svg>
@@ -68,8 +56,7 @@
       </div>
     </div>
 
-    <!-- hero -->
-     <section class="bg-secondary/15 pt-5 md:pt-0 overflow-hidden">
+    <section class="bg-secondary/15 pt-5 md:pt-0 overflow-hidden">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-center gap-8 md:gap-16">
           
@@ -84,39 +71,24 @@
           </div>
           
           <div class="flex justify-center md:justify-start md:self-end">
-            <img 
-              src="/IMG/banner-home.png" 
-              alt="Delivery man on scooter" 
-              class="w-full max-w-[320px] md:max-w-112.5 lg:max-w-137.5 object-contain"
-            />
+            <img src="/IMG/banner-home.png" alt="Delivery man on scooter" class="w-full max-w-[320px] md:max-w-112.5 lg:max-w-137.5 object-contain" />
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- about -->
-     <section id="about" class="py-16 md:py-24 bg-white">
+    <section id="about" class="py-16 md:py-24 bg-white">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
           
           <div class="w-full md:w-1/2 relative h-75 sm:h-100 max-w-md mx-auto md:mx-0">
-            <img
-              src="/IMG/3chefs.png" 
-              alt="Chefs"
-              class="absolute top-0 left-0 w-[70%] h-[65%] object-cover rounded-3xl border-[6px] border-black"
-            />
-            <img
-              src="/IMG/food.png" 
-              alt="Food"
-              class="absolute bottom-0 right-0 w-[75%] h-[60%] object-cover rounded-3xl border-[6px] border-black z-10 bg-white"
-            />
+            <img src="/IMG/3chefs.png" alt="Chefs" class="absolute top-0 left-0 w-[70%] h-[65%] object-cover rounded-3xl border-[6px] border-black" />
+            <img src="/IMG/food.png" alt="Food" class="absolute bottom-0 right-0 w-[75%] h-[60%] object-cover rounded-3xl border-[6px] border-black z-10 bg-white" />
           </div>
 
           <div class="w-full md:w-1/2 text-center md:text-left">
-            <h2 class="text-3xl md:text-4xl lg:text-[40px] font-black uppercase text-gray-900 mb-6 tracking-tight">
-              Welcome to Get Pizza
-            </h2>
+            <h2 class="section-heading mb-6">Welcome to Get Pizza</h2>
             <p class="text-primary font-semibold uppercase text-xs md:text-sm mb-6 tracking-wide leading-relaxed">
               Our chefs are working 24/7 and are ready to accept visitors <br class="hidden xl:block"> and at any time of the day and night
             </p>
@@ -131,7 +103,6 @@
       </div>
     </section>
 
-    <!-- menu -->
     <section id="menu" class="bg-tertiary py-16 md:py-24 text-white">
       <div class="container mx-auto px-4 sm:px-6 md:px-20">
         
@@ -168,144 +139,99 @@
         </div>
 
         <div id="content-pizza" class="menu-content grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/prosciutto.png" alt="Prosciutto Pizza" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Prosciutto Pizza</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$25.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/prosciutto.png" alt="Prosciutto Pizza" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Prosciutto Pizza</h3>
+            <p class="menu-card-price">$25.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/bbq pizza.png" alt="Barbecue Pizza" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Barbecue Pizza</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$25.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/bbq pizza.png" alt="Barbecue Pizza" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Barbecue Pizza</h3>
+            <p class="menu-card-price">$25.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
         </div>
 
         <div id="content-burger" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Cheese Burger</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$15.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Cheese Burger</h3>
+            <p class="menu-card-price">$15.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Cheese Burger</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$18.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/CHEESE BURGER.png" alt="Cheese Burger" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Cheese Burger</h3>
+            <p class="menu-card-price">$18.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
         </div>
 
         <div id="content-chicken" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Fillet With Bread</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$45.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Fillet With Bread</h3>
+            <p class="menu-card-price">$45.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Fillet With Bread</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$58.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/CHICKEN WITH BREAD.png" alt="Fillet With Bread" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Fillet With Bread</h3>
+            <p class="menu-card-price">$58.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
         </div>
 
         <div id="content-drinks" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Orange Drinks</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$10.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Orange Drinks</h3>
+            <p class="menu-card-price">$10.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Orange Drinks</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$12.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/ORANGE DRINK.png" alt="Orange Drinks" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Orange Drinks</h3>
+            <p class="menu-card-price">$12.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
         </div>
 
         <div id="content-cake" class="menu-content hidden gap-4 md:gap-8 max-w-4xl mx-auto">
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Muffin</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$23.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Muffin</h3>
+            <p class="menu-card-price">$23.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
-          <div class="border border-secondary/50 rounded-2xl p-4 sm:p-6 md:p-10 flex flex-col items-center text-center w-full">
-            <div class="rounded-full border border-white/20 p-2 mb-4 md:mb-6">
-              <img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="size-20 sm:size-28 md:size-40 rounded-full object-cover">
-            </div>
-            <h3 class="text-[13px] sm:text-base md:text-xl font-black uppercase mb-1">Muffin</h3>
-            <p class="font-bold text-[11px] sm:text-sm md:text-base mb-2">$20.00</p>
-            <div class="flex gap-1 text-secondary text-[10px] sm:text-xs md:text-base mb-4 md:mb-8">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            <a href="#" class="border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors">Read more</a>
+          <div class="menu-card">
+            <div class="menu-card-img-wrap"><img src="/IMG/MUFFIN-CAKE.png" alt="Muffin" class="menu-card-img"></div>
+            <h3 class="menu-card-title">Muffin</h3>
+            <p class="menu-card-price">$20.00</p>
+            <div class="menu-card-rating"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            <a href="#" class="menu-card-btn">Read more</a>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- connect -->
-     <section id="connect" class="bg-primary pt-10 md:pt-0 overflow-hidden">
+    <section id="connect" class="bg-primary pt-10 md:pt-0 overflow-hidden">
       <div class="container mx-auto px-6 md:px-20">
         <div class="flex flex-col md:flex-row items-center justify-center">
           
           <div class="hidden md:flex w-full md:w-1/2 justify-end md:self-end">
-            <img 
-              src="/IMG/chef.png" 
-              alt="Chef pointing" 
-              class="w-full max-w-70 md:max-w-87.5 lg:max-w-105 object-contain"
-            />
+            <img src="/IMG/chef.png" alt="Chef pointing" class="w-full max-w-70 md:max-w-87.5 lg:max-w-105 object-contain" />
           </div>
 
           <div class="w-full md:w-1/2 text-center text-white py-12 md:py-24 flex flex-col items-center">
@@ -317,16 +243,8 @@
             </p>
 
             <form class="w-full max-w-md bg-white p-1.5 flex flex-col sm:flex-row items-center rounded-md mx-auto gap-2 sm:gap-0">
-              <input 
-                type="email" 
-                placeholder="YOUR EMAIL ADDRESS" 
-                class="flex-1 w-full bg-transparent text-gray-800 text-xs font-semibold px-4 py-3 outline-none placeholder-gray-400 text-center sm:text-left"
-                required
-              />
-              <button 
-                type="submit" 
-                class="bg-secondary text-gray-900 text-xs font-bold uppercase px-8 py-3 rounded hover:bg-yellow-500 transition-colors w-full sm:w-auto whitespace-nowrap"
-              >
+              <input type="email" placeholder="YOUR EMAIL ADDRESS" class="flex-1 w-full bg-transparent text-gray-800 text-xs font-semibold px-4 py-3 outline-none placeholder-gray-400 text-center sm:text-left" required />
+              <button type="submit" class="bg-secondary text-gray-900 text-xs font-bold uppercase px-8 py-3 rounded hover:bg-yellow-500 transition-colors w-full sm:w-auto whitespace-nowrap">
                 Subscribe
               </button>
             </form>
@@ -336,8 +254,7 @@
       </div>
     </section>
 
-    <!-- footer -->
-     <footer class="bg-white py-16">
+    <footer class="bg-white py-16">
       <div class="container mx-auto px-6 md:px-20 flex flex-col items-center text-center">
         
         <a href="#" class="mb-12">
@@ -377,8 +294,7 @@
       </div>
     </footer>
 
-    <!-- script -->
-     <script src="/js/toggle-menu.js"></script>
+    <script src="/js/toggle-menu.js"></script>
      <script src="/js/menu-tabs.js"></script>
 
 </body>
