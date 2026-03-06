@@ -56,6 +56,34 @@
   .menu-card-btn {
     @apply border border-primary rounded-lg px-3 py-2 md:px-4 md:py-2.5 text-[9px] sm:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors;
   }
+
+  /* --- MENU CARD COMPONENTS (Menu Page - Smaller layout) --- */
+  .menu-page-card {
+    @apply border border-transparent md:border-secondary/50 rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 flex flex-col items-center text-center w-full;
+  }
+  .menu-page-img-wrap {
+    @apply rounded-full border border-white/20 p-1.5 md:p-2 mb-3 md:mb-6;
+  }
+  .menu-page-img {
+    @apply size-20 sm:size-24 md:size-32 rounded-full object-cover;
+  }
+  .menu-page-title {
+    @apply text-[11px] sm:text-sm md:text-lg font-black uppercase mb-1;
+  }
+  .menu-page-price {
+    @apply font-bold text-[10px] sm:text-xs md:text-base mb-1.5 md:mb-2;
+  }
+  .menu-page-rating {
+    @apply flex gap-0.5 text-secondary text-[8px] sm:text-[10px] md:text-sm mb-3 md:mb-6;
+  }
+  .menu-page-btn {
+    @apply border border-primary rounded md:rounded-lg px-2.5 py-1.5 md:px-4 md:py-2.5 text-[8px] sm:text-[10px] md:text-xs font-bold uppercase hover:bg-white hover:text-tertiary transition-colors;
+  }
+
+  /* --- FORM COMPONENTS --- */
+  .form-input {
+    @apply bg-white text-gray-800 text-sm md:text-base font-medium px-4 py-3.5 md:px-5 md:py-4 rounded md:rounded-md outline-none placeholder-gray-400 border border-transparent focus:border-primary transition-colors;
+  }
 }
 
 /* Hide scrollbar utility */
